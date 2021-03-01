@@ -1,0 +1,3 @@
+testScenarioData:
+  createNewAccount:
+    - { PhoneNumber: "9966761001",FaxNumber: "12345",BillingStreet: "Epam",ShippingStreet: "Hyderabad",Industry: "Chemicals",CustomerPriority: "Low",AccountOwner: "Gorakshanath Test",AccountName: "Testing",Profile: "Sales" }

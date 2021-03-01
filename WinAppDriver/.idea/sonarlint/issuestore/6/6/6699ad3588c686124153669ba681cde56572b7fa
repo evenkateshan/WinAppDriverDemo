@@ -1,0 +1,11 @@
+
+t
+java:S1171"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ò‰ßÝÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(É¿äé
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Î’ó¡ÿÿÿÿÿ
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(½˜ûÁýÿÿÿÿ
+U
+java:S1854'":Remove this useless assignment to local variable "blocks".(¡Æ¾Žÿÿÿÿÿ
+F
+java:S1481'"+Remove this unused "blocks" local variable.(¡Æ¾Žÿÿÿÿÿ

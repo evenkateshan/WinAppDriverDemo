@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-02T00:22:09 IST" name="Default suite" finished-at="2021-03-02T00:23:21 IST" duration-ms="72597">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.win.cucumber.CucumberRunner@33bc72d1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2021-03-02T00:22:09 IST" name="Default test" finished-at="2021-03-02T00:23:21 IST" duration-ms="72597">
+      <class name="com.win.cucumber.CucumberRunner">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.win.cucumber.CucumberRunner@33bc72d1]" started-at="2021-03-02T00:22:09 IST" name="beforeSuite" finished-at="2021-03-02T00:22:09 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.win.cucumber.CucumberRunner@33bc72d1]" started-at="2021-03-02T00:22:09 IST" name="setUpClass" finished-at="2021-03-02T00:22:09 IST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.win.cucumber.CucumberRunner@33bc72d1]" started-at="2021-03-02T00:22:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-02T00:23:13 IST" duration-ms="64183" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Calculator using WinAppDriver"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate Calculator Application using WinAppDriver"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [0] but found [9]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [0] but found [9]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at com.win.stepdefs.CalculatorStepDef.validateResultAdd(CalculatorStepDef.java:31)
+at ✽.Validate the Result for addition(file:///C:/Users/Elango_Venkateshan/eclipse-workspace/WallGreens_Automation/src/test/resources/features/WinAppDriverSample.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.win.cucumber.CucumberRunner@33bc72d1]" started-at="2021-03-02T00:23:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-02T00:23:21 IST" duration-ms="7865" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Calculator using WinAppDriver"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate Calculator Application using WinAppDriver"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [0] but found [9]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [0] but found [9]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at com.win.stepdefs.CalculatorStepDef.validateResultSubtract(CalculatorStepDef.java:40)
+at ✽.Validate the Result for subtraction(file:///C:/Users/Elango_Venkateshan/eclipse-workspace/WallGreens_Automation/src/test/resources/features/WinAppDriverSample.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.win.cucumber.CucumberRunner@33bc72d1]" started-at="2021-03-02T00:23:21 IST" name="tearDownClass" finished-at="2021-03-02T00:23:21 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.win.cucumber.CucumberRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

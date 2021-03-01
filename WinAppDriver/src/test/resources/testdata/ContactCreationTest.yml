@@ -1,0 +1,3 @@
+testScenarioData:
+  createNewContact:
+    - {Profile: "Sales",FirstName: "test",LastName: "case",PhoneNumber: "9949321001",Title: "Employee",LeadSource: "Web",MailingStreet: "SalarpuriaSattva",MailingCity: "Hyderabad",ContactOwner: "Gorakshanath Test",AccountName: "Testing123"}

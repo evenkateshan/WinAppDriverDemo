@@ -1,0 +1,15 @@
+testScenarioData:
+  createNewUser:
+    - {QuickFind: "Users",
+       LastName: "TestName",
+       Alias: "TestAlias",
+       Email: "sahithi.kakkerla@yahoo.in",
+       Username: "k",
+       Role: "<None Specified>",
+       UserLicense: "Work.com Only",
+       Profile: "Work.com Only User",
+       EmailEncodingKey: "General US & Western Europe (ISO-8859-1, ISO-LATIN-1)",
+       TimeZoneSidKey: "(GMT+02:00) Central European Summer Time (Europe/Brussels)",
+       LocaleSidKey: "English (India)",
+       LanguageLocaleKey: "English",
+       ReceiveApprovalsEmails: "Only if I am an approver"}

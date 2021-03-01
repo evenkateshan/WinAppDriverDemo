@@ -1,0 +1,3 @@
+testScenarioData:
+  createNewProfile:
+    - { QuickFind: "Profiles", ProfileNamePrefix: "TProf", ExistingProfile: "Custom: Sales Profile" }
