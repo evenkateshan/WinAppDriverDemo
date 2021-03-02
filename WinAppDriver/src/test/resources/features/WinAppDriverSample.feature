@@ -1,6 +1,6 @@
 Feature: Validate Calculator Application using WinAppDriver
 
-@Calculator
+@Calculator1
   Scenario: Validate Calculator using WinAppDriver
     Given Launch Calculator App
     When User enters values to add

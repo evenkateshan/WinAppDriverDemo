@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+import io.appium.java_client.windows.WindowsDriver;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,6 +33,10 @@ public class ActionsExecutor {
             JavaScriptUtils.click(driver, element);
         }
     }
+    public static void click(WindowsDriver winDriver, WebElement element) {
+            element.click();        
+    }
+
 
     public static void sendKeys(WebDriver driver, Locator locator, String value) {
         try {
@@ -39,6 +45,9 @@ public class ActionsExecutor {
             SyncUtils.waitForClickable(driver, locator);
             driver.findElement(locator.getBy()).sendKeys(value);
         }
+    }
+    public static void sendKeys(WindowsDriver winDriver, WebElement element, String value) {
+        	element.sendKeys(value);
     }
 
     public static void sendKeys(WebDriver driver, Locator locator, Keys keyToPress) {
@@ -60,6 +69,9 @@ public class ActionsExecutor {
         }
     }
 
+    public static String getText(WindowsDriver winDriver, WebElement element) {
+            return element.getText();
+    }
 
     public static void clickByAction(WebDriver driver, Locator locator) {
         Actions action = new Actions(driver);

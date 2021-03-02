@@ -1,10 +1,13 @@
 package com.win.pages;
 
 import java.net.URL;
+
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import com.win.taf.core.driver.DriverManager;
 import com.win.taf.ui.AbstractPageWindows;
+import com.win.taf.ui.ActionsExecutor;
 
 import io.appium.java_client.windows.WindowsDriver;
 
@@ -12,13 +15,13 @@ import io.appium.java_client.windows.WindowsDriver;
 public class CalculatorPage extends AbstractPageWindows {
 	
 	WindowsDriver winDriver=DriverManager.getWinDriver();
-	//four
-	//five
-	//result
-	//plus
-	//minus
-	//equals
-	
+	WebElement fourBtn=winDriver.findElementByName("Four");
+	WebElement fiveBtn=winDriver.findElementByName("Five");
+	WebElement nineBtn=winDriver.findElementByName("Nine");
+	WebElement plusBtn=winDriver.findElementByName("Plus");
+	WebElement minusBtn=winDriver.findElementByName("Minus");
+	WebElement equalsBtn=winDriver.findElementByName("Equals");
+	WebElement resultBox=winDriver.findElementByAccessibilityId("CalculatorResults");	
 	
 	
  public CalculatorPage()
@@ -29,51 +32,23 @@ public class CalculatorPage extends AbstractPageWindows {
 	
 	public void enterValuesAdd()
 	{
-		System.out.println("Four");
-		//click four
-		//click plus
-		//click five
-		//click equals
-//		winDriver.findElementByName(a).click();
-//		
-//		
-//		if(c.equals("Add"))
-//		{
-//			winDriver.findElementByName("Plus").click();
-//		}
-//		else
-//		if(c.equals("Subtract"))
-//		{
-//			winDriver.findElementByName("Minus").click();
-//		}
-//		else
-//		if(c.equals("Multiply"))
-//		{
-//			winDriver.findElementByName("Multiply by").click();
-//		}
-//		else
-//		if(c.equals("Divide"))
-//		{
-//			winDriver.findElementByName("Divide by").click();
-//		}
-//		winDriver.findElementByName(b).click();
-//		
-//		 winDriver.findElementByName("Equals").click();
-				
+		ActionsExecutor.click(winDriver, fourBtn);
+		ActionsExecutor.click(winDriver, plusBtn);
+		ActionsExecutor.click(winDriver, fiveBtn);
+		ActionsExecutor.click(winDriver, equalsBtn);
 	}
 	
 	public void enterValuesSubtract()
 	{
-		System.out.println("Four5");
-		//Nine
-		//minus
-		//five
-		//equals
+		ActionsExecutor.click(winDriver, nineBtn);
+		ActionsExecutor.click(winDriver, minusBtn);
+		ActionsExecutor.click(winDriver, fiveBtn);
+		ActionsExecutor.click(winDriver, equalsBtn);
 	}
 	
 	public String _GetCalculatorResultText()
     {
-        return winDriver.findElementByAccessibilityId("CalculatorResults").getText().replace("Display is", "").trim();
+        return ActionsExecutor.getText(winDriver, resultBox).replace("Display is", "").trim();
     }
 
 }

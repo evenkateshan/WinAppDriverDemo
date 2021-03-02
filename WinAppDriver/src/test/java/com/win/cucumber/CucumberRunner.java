@@ -14,7 +14,9 @@ import org.testng.annotations.Listeners;
 @CucumberOptions(
         strict = false,
         features = {"src\\test\\resources\\features"},
-        glue = {"com.win", "com.win.taf"})
+        glue = {"com.win", "com.win.taf"},
+        tags= {"@Calculator"}
+        )
 public class CucumberRunner extends AbstractTestNGCucumberTests {
     @Override
     @DataProvider(parallel = false)
