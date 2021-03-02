@@ -1,7 +1,7 @@
-Windows Application Driver
+**Windows Application Driver**
 Windows Application Driver (WinAppDriver) is a service to support Selenium-like UI Test Automation on Windows Applications. This service supports testing Universal Windows Platform (UWP), Windows Forms (WinForms), Windows Presentation Foundation (WPF), and Classic Windows (Win32) apps on Windows 10 PCs.
 
-Install & Run WinAppDriver
+**Install & Run WinAppDriver**
 Download Windows Application Driver installer from https://github.com/Microsoft/WinAppDriver/releases
 Run the installer on a Windows 10 machine where your application under test is installed and will be tested
 Enable Developer Mode in Windows settings
@@ -16,13 +16,13 @@ Note: You must run WinAppDriver.exe as administrator to listen to a different IP
 Write an Automation Script
 Now that you've successfully installed WinAppDriver, you can get started with authoring your first automation script!
 
-Supported APIs
+**Supported APIs**
 See here for a list of supported APIs by WinAppDriver. API support may differ from Appium and other counterparts.
 
-FAQ & Documentation
+**FAQ & Documentation**
 Additional documentation on WinAppDriver and related topics can be found under /Docs/, such as the following:
 
-Frequently Asked Questions
+**Frequently Asked Questions**
 General Development & Best Practices
 Using with Appium
 Running WinAppDriver in CI (with Azure Pipelines)
