@@ -62,8 +62,6 @@ public class SyncUtils {
         try {
             WebDriverWait wait = new WebDriverWait(driver, waitInSeconds);
 
-            wait.ignoring(NoSuchElementException.class)
-                    .until(ExpectedConditions.elementToBeClickable(driver.findElement(locator.getBy())));
         } catch (Exception e) {
             logger.info("Timeout during waitForClickable");
         }

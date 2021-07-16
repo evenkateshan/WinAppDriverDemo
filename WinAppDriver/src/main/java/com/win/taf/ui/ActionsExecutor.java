@@ -160,7 +160,7 @@ public class ActionsExecutor {
     }
 
     public static void switchToFrameUsingLocator(WebDriver driver, Locator locator) {
-        driver.switchTo().frame(driver.findElement(locator.getBy()));
+      
     }
 
     public static void switchToDefaultContent(WebDriver driver) {
